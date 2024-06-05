@@ -15,6 +15,7 @@
             height: 100vh;
             margin: 0;
             color: #fff;
+            text-align: center;
         }
         h1 {
             font-size: 3em;
@@ -41,16 +42,27 @@
             background: #d64b40;
         }
     </style>
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
 </head>
 <body>
     <h1>Happy Birthday!</h1>
     <div class="button-container">
-        <button class="button">Celebrate</button>
-        <button class="button">Party Time</button>
-        <button class="button">Cheers</button>
-        <button class="button">Make a Wish</button>
-        <button class="button">Cake Time</button>
-        <button class="button">Surprise</button>
+        <button class="button" onclick="showMessage('Celebrate!')">Celebrate</button>
+        <button class="button" onclick="showMessage('Party Time!')">Party Time</button>
+        <button class="button" onclick="showMessage('Cheers!')">Cheers</button>
+        <button class="button" onclick="showMessage('Make a Wish!')">Make a Wish</button>
+        <button class="button" onclick="showMessage('Cake Time!')">Cake Time</button>
+        <button class="button" onclick="showMessage('Surprise!')">Surprise</button>
+        <button class="button" onclick="showMessage('Let\'s Dance!')">Let's Dance</button>
+        <button class="button" onclick="showMessage('Happy Moments!')">Happy Moments</button>
+        <button class="button" onclick="showMessage('Best Wishes!')">Best Wishes</button>
+        <button class="button" onclick="showMessage('Enjoy Your Day!')">Enjoy Your Day</button>
+        <button class="button" onclick="showMessage('Happiness Always!')">Happiness Always</button>
+        <button class="button" onclick="showMessage('You\'re Special!')">You're Special</button>
     </div>
 </body>
 </html>
