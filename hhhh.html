@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Happy Birthday Donny">
+    <meta name="robots" content="index, follow" />
+    <link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
+    <meta name="keywords" content="Birthday, Happy">
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Signika', sans-serif;
+        }
+        .balloons {
+            margin: 20px 0;
+        }
+        .balloon-border {
+            margin-top: 20px;
+        }
+        .bulb-holder {
+            text-align: center;
+        }
+        .bulb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        #bulb_yellow { background-color: yellow; }
+        #bulb_red { background-color: red; }
+        #bulb_blue { background-color: blue; }
+        #bulb_green { background-color: green; }
+        #bulb_pink { background-color: pink; }
+        #bulb_orange { background-color: orange; }
+        .cake {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            margin: 20px auto;
+        }
+        .velas {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+        }
+        .velas div {
+            width: 10px;
+            height: 60px;
+            background: #ff6347;
+            margin: 0 5px;
+            position: relative;
+        }
+        .fuego {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            margin: auto;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid yellow;
+        }
+        .cobertura {
+            width: 100%;
+            height: 60px;
+            background: #ff6347;
+            position: absolute;
+            top: 0;
+        }
+        .bizcocho {
+            width: 100%;
+            height: 240px;
+            background: #deb887;
+            position: absolute;
+            bottom: 0;
+        }
+        .message {
+            margin: 20px 0;
+        }
+        .navbar-fixed-bottom {
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+        }
+        .bannar {
+            margin: 20px auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#turn_on').click(function(){
+                $('.bulb').css('background-color', function(){
+                    return $(this).attr('id').replace('bulb_', '');
+                });
+            });
+            $('#play').click(function(){
+                $('.song')[0].play();
+            });
+            $('#bannar_coming').click(function(){
+                $('.bannar').fadeIn('slow');
+            });
+            $('#balloons_flying').click(function(){
+                $('.balloons').animate({top: '-1000px'}, 'slow');
+            });
+            $('#cake_fadein').click(function(){
+                $('.cake').fadeIn('slow');
+            });
+            $('#light_candle').click(function(){
+                $('.fuego').show();
+            });
+            $('#wish_message').click(function(){
+                alert('Happy Birthday Donny!');
+            });
+            $('#story').click(function(){
+                alert('Today is your special day\nYou\'re getting older now HAHAHAHA :D\nHappy Birthday Kokoh Donny!\nWishing in 21 years old\nyou always healthy\nalways happy\nmay all your wishes\nand your dreams come true\nmay your life be at ease\nall the best on your journey\nand\nhave a blessed year ahead!\nYou\'re always doing great\nSo\nWhen you feel tired\nJust rest a while\nDon\'t give up okay?\nBy the way\nI don\'t know what should I write\nHowever\nBest wishes for you\nHope you like it\nAnd\nSee you~\nBut wait...\nDon\'t forget to give me a feedback\nAbout this website :D');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="loading"></div>
+    <audio class="song" controls loop>
+        <source src="hbd.mp3"></source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <div class="balloons text-center" id="b1">
+        <h2 style="color:#F2B300;"></h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+        <h2 style="color:#0719D4;"></h2>
+    </div>
+    <div class="balloons text-center" id="b5">
+        <h2 style="color:#8377E4;"></h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+        <h2 style="color:#8FAD00;"></h2>
+    </div>
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_yellow"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_red"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_blue"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_green"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_pink"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_orange"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="banner.png" class="bannar" style="display: none;">
+            </div>
+        </div>
+        <div class="row cake-cover">
+            <div class="col-md-12 text-center">
+                <div class="cake" style="display: none;">
+                    <div class="velas">
+                        <div class="fuego" style="display: none;"></div>
+                        <div class="fuego" style="display: none;"></div>
+                        <div class="fuego" style="display: none;"></div>
+                        <div class="fuego" style="display: none;"></div>
+                        <div class="fuego" style="display: none;"></div>
+                    </div>
+                    <div class="cobertura"></div>
+                    <div class="bizcocho"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row message">
+            <div class="col-md-12">
+                <p>Today is your special day</p>
+                <p>You're getting older now HAHAHAHA :D</p>
+                <p>Happy Birthday Kokoh Donny !</p>
+                <p>Wishing in 21 years old</p>
+                <p>you always healthy</p>
+                <p>always happy</p>
+                <p>may all your wishes</p>
+                <p>and your dreams come true</p>
+                <p>may your life be at ease</p>
+                <p>all the best on your journey</p>
+                <p>and</p>
+                <p>have a blessed year ahead!</p>
+                <p>You're always doing great</p>
+                <p>So</p>
+                <p>When you feel tired</p>
+                <p>Just rest a while</p>
+                <p>Don't give up okay ?</p>
+                <p>By the way</p>
+                <p>I don't know what should I write</p>
+                <p>However</p>
+                <p>Best wishes for you</p>
+                <p>Hope you like it</p>
+                <p>And</p>
+                <p>See you~</p>
+                <p>But wait...</p>
+                <p>Don't forget to give me a feedback</p>
+                <p>About this website :D</p>
+            </div>
+        </div>
+        <div class="navbar navbar-fixed-bottom">
+            <div class="row">
+                <div class="col-md-6 text-center col-md-offset-3">
+                    <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+                    <button class="btn btn-primary" id="play">Play Music</button>
+                    <button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+                    <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+                    <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+                    <button class="btn btn-primary" id="light_candle"> Light Candle</button>
+                    <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+                    <button class="btn btn-primary" id="story">A message for you</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
