@@ -3,57 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #ff4500;
-        }
-        .greeting {
-            font-size: 24px;
-            color: #ff69b4;
-            margin-top: 20px;
-        }
-        button {
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #ff4500;
-        }
-    </style>
+    <title>Birthday Greeting</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Happy Birthday!</h1>
-        <button onclick="showGreeting()">Press me for a surprise!</button>
-        <p class="greeting" id="greeting"></p>
+        <h1 id="greeting">Happy Birthday!</h1>
+        <button id="revealButton">Press me!</button>
+        <div id="message" class="hidden">
+            <p>Wishing you a day filled with love, joy, and all your favorite things!</p>
+        </div>
     </div>
-    <script>
-        function showGreeting() {
-            document.getElementById('greeting').innerText = 'Wishing you all the best on your special day! 🎉🎂🎈';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
