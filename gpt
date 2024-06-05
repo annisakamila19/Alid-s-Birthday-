@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you all the best on your special day!</p>
+        <audio id="birthdaySong" src="path_to_your_birthday_song.mp3" autoplay loop></audio>
+    </div>
+    <script>
+        // Ensure the song plays
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('birthdaySong');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
