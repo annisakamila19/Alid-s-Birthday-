@@ -3,17 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Greeting</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .birthday-button {
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .birthday-button:hover {
+            background-color: #ff4a42;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="greeting">Happy Birthday!</h1>
-        <button id="revealButton">Press me!</button>
-        <div id="message" class="hidden">
-            <p>Wishing you a day filled with love, joy, and all your favorite things!</p>
-        </div>
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you all the best on your special day!</p>
+        <button class="birthday-button" onclick="changeButtonText()">Click me!</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function changeButtonText() {
+            const button = document.querySelector('.birthday-button');
+            button.innerHTML = "Happy Birthday!";
+        }
+    </script>
 </body>
 </html>
